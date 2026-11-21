@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reo: private messaging that opens instantly</title>
+<meta name="description" content="Reo is a tiny end-to-end encrypted messenger for Windows, Linux, Android and the web. Direct LAN delivery, calls, voice notes, files, groups, a company directory and an SOS button.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="Reo: private messaging that opens instantly">
+<meta property="og:description" content="Tiny, end-to-end encrypted, direct on your network. Chat, calls, files, groups, directory and mail.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@700;900&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Reo home">REO<i></i></a>
+    <div class="links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#teams">For teams</a>
+      <a href="#get">Download</a>
+      <a class="btn red sm" href="#get">Get Reo</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1 aria-label="Reo"><span>R</span><span>E</span><span>O</span></h1>
+      <p class="lead">A private messenger small enough to open in a blink. Chats go straight to your colleagues over the local network when they can, and everything is sealed so only the two of you can read it.</p>
+      <div class="cta">
+        <a class="btn red" href="#get">Download Reo</a>
+        <a class="btn ghost" href="https://reo-relay.reo-relay.workers.dev/" rel="noopener">Open in your browser</a>
+      </div>
+      <div class="tick mono"><span>● End-to-end encrypted</span><span>● 143 KB web app</span><span>● No per-seat fees</span></div>
+    </div>
+
+    <div class="phone" aria-label="A Reo conversation, animated">
+      <div class="screen">
+        <div class="p-head"><div class="av">A</div><div><b>Aarav</b><small><span class="live"></span>ACTIVE NOW · LAN DIRECT</small></div></div>
+        <div class="msgs" id="chat"></div>
+        <div class="p-in">Message</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="marq" aria-hidden="true">
+  <div class="marq-in" id="marq"></div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat rv"><b data-n="143" data-s=" KB">0</b><span>whole web app, 52 KB gzipped</span></div>
+      <div class="stat rv"><b data-n="21" data-s=" KB">0</b><span>the Android app</span></div>
+      <div class="stat rv"><b data-n="0" data-s="">0</b><span>per-seat licences</span></div>
+      <div class="stat rv"><b data-n="4" data-s="">0</b><span>platforms: Windows, Linux, Android, web</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="head rv"><p class="mono">What you can do</p><h2>Everything a team chat needs.</h2><p class="lead">Nothing you do not.</p></div>
+    <div class="cards">
+      <div class="card rv"><div class="glyph"><svg viewBox="0 0 120 64"><g fill="currentColor"><rect x="4" y="26" width="6" height="12" rx="3"><animate attributeName="height" values="12;40;12" dur="1s" repeatCount="indefinite"/><animate attributeName="y" values="26;12;26" dur="1s" repeatCount="indefinite"/></rect><rect x="20" y="22" width="6" height="20" rx="3"><animate attributeName="height" values="20;50;20" dur="1.1s" repeatCount="indefinite"/><animate attributeName="y" values="22;7;22" dur="1.1s" repeatCount="indefinite"/></rect><rect x="36" y="18" width="6" height="28" rx="3"><animate attributeName="height" values="28;12;28" dur="0.9s" repeatCount="indefinite"/><animate attributeName="y" values="18;26;18" dur="0.9s" repeatCount="indefinite"/></rect><rect x="52" y="24" width="6" height="16" rx="3"><animate attributeName="height" values="16;46;16" dur="1.2s" repeatCount="indefinite"/><animate attributeName="y" values="24;9;24" dur="1.2s" repeatCount="indefinite"/></rect><rect x="68" y="20" width="6" height="24" rx="3"><animate attributeName="height" values="24;10;24" dur="1s" repeatCount="indefinite"/><animate attributeName="y" values="20;27;20" dur="1s" repeatCount="indefinite"/></rect><rect x="84" y="26" width="6" height="12" rx="3"><animate attributeName="height" values="12;36;12" dur="1.3s" repeatCount="indefinite"/><animate attributeName="y" values="26;14;26" dur="1.3s" repeatCount="indefinite"/></rect></g></svg></div><h3>Text, voice notes, files</h3><p>Hold to record a voice note. Send files up to 250 MB on the LAN and 100 MB anywhere else, hash-checked.</p></div>
+      <div class="card rv"><div class="glyph"><svg viewBox="0 0 64 64"><g fill="none" stroke="var(--accent)" stroke-width="2"><circle class="ring" cx="32" cy="32" r="28"/><circle class="ring" cx="32" cy="32" r="28"/><circle class="ring" cx="32" cy="32" r="28"/></g><circle cx="32" cy="32" r="7" fill="var(--accent)"/></svg></div><h3>Calls, voice and video</h3><p>Ring, accept, decline. Calls try the local network first, so on one campus the media never leaves the building.</p></div>
+      <div class="card rv"><div class="glyph"><svg viewBox="0 0 140 64"><circle cx="16" cy="32" r="10" fill="currentColor"/><circle cx="124" cy="32" r="10" fill="currentColor"/><path d="M30 32H110" stroke="var(--accent)" stroke-width="3" stroke-dasharray="6 8"><animate attributeName="stroke-dashoffset" values="0;-14" dur="0.7s" repeatCount="indefinite"/></path></svg></div><h3>Direct on your network</h3><p>Two devices on the same Wi-Fi connect peer to peer. No round trip through the internet, no server in the middle.</p></div>
+      <div class="card rv"><div class="glyph"><div class="sosbtn">SOS</div></div><h3>SOS button</h3><p>One red button alerts everyone who is online. Urgent bubbles stay on screen until someone taps "I'm on it".</p></div>
+      <div class="card rv"><div class="glyph"><svg viewBox="0 0 90 64"><g fill="currentColor"><circle cx="14" cy="32" r="8"/><circle cx="45" cy="32" r="8" opacity="0.55"/><circle cx="76" cy="32" r="8" opacity="0.2"/></g><circle cx="14" cy="32" r="12" fill="none" stroke="var(--accent)"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle></svg></div><h3>Presence</h3><p>See who is active now, online with the app closed, or out of reach. Anyone can hide their status.</p></div>
+      <div class="card rv"><div class="glyph"><svg viewBox="0 0 80 64"><rect x="6" y="14" width="68" height="40" rx="10" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M10 20L40 40L70 20" fill="none" stroke="var(--accent)" stroke-width="2.5"><animate attributeName="stroke-dasharray" values="0 120;120 0" dur="2s" repeatCount="indefinite"/></path></svg></div><h3>SMS when there is no data</h3><p>If someone is unreachable, send an SMS from your own phone. Every text asks first, because SMS costs money.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="head rv"><p class="mono">How a message travels</p><h2>Closest path wins.</h2><p class="lead">Reo tries the shortest route first and only falls back to the relay when it has to. Pick a situation.</p></div>
+    <div class="travel rv">
+      <div class="tabs" role="group" aria-label="Network situation">
+        <button type="button" data-mode="lan" aria-pressed="true">SAME WI-FI</button>
+        <button type="button" data-mode="net" aria-pressed="false">DIFFERENT NETWORKS</button>
+        <button type="button" data-mode="down" aria-pressed="false">INTERNET DOWN</button>
+      </div>
+      <svg class="diagram" viewBox="0 0 720 240" role="img" aria-label="Message path between two devices">
+        <rect class="node" x="20" y="80" width="130" height="80" rx="24"/><text class="node-t" x="85" y="126" text-anchor="middle">YOUR PHONE</text>
+        <rect class="node" x="570" y="80" width="130" height="80" rx="24"/><text class="node-t" x="635" y="126" text-anchor="middle">THEIR LAPTOP</text>
+        <g id="p-lan"><path class="path" id="l-lan" d="M150 120H570"/><text x="360" y="108" text-anchor="middle">DIRECT OVER THE LAN</text></g>
+        <g id="p-cloud"><path class="path" id="l-cloud" d="M110 80C110 8 300 8 360 30C420 8 610 8 610 80"/><rect class="node" x="300" y="12" width="120" height="44" rx="16"/><text class="node-t" x="360" y="40" text-anchor="middle" id="relay-t">RELAY</text></g>
+        <circle class="pkt" id="pkt" r="7" cx="150" cy="120"/>
+      </svg>
+      <p class="caption" id="cap"></p>
+      <p class="note" id="note"></p>
+    </div>
+  </div>
+</section>
+
+<section id="teams">
+  <div class="wrap split">
+    <div class="rv">
+      <p class="mono">For teams</p>
+      <h2 style="margin-block:16px 20px">Your company, on your own network.</h2>
+      <p class="lead">Create a workspace, set who reports to whom, and tag a coworker with @name. Send official mail with a subject, To and CC. Add anyone in seconds by scanning their QR code or pasting their code.</p>
+      <p class="lead" style="margin-top:14px">Run the relay on a server you own and traffic stays inside the building. There is no per-seat price, and the 500th person costs the same as the fifth.</p>
+    </div>
+    <div class="org rv" id="org" aria-label="Example org chart">
+      <div class="row" style="--i:0"><div class="av">M</div><div><b>Meera Rao</b><small>CEO</small></div><span class="tag">ADMIN</span></div>
+      <div class="row l1" style="--i:1"><div class="av">A</div><div><b>Aarav Nair</b><small>Head of engineering</small></div></div>
+      <div class="row l2" style="--i:2"><div class="av">K</div><div><b>Kabir Shah</b><small>Engineer</small></div><span class="tag">MENTIONED YOU</span></div>
+      <div class="row l1" style="--i:3"><div class="av">S</div><div><b>Sana Iyer</b><small>Head of operations</small></div></div>
+      <div class="row" style="--i:4"><div class="mono">&gt; <span class="mention">@Kabir</span> please review the plan</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head rv"><p class="mono">Privacy</p><h2>The relay cannot read it.</h2></div>
+    <div class="trust">
+      <div class="rv"><h3>Sealed on your device</h3><p>Every message is encrypted with a key only you and the recipient hold, using X25519 and AES-256-GCM, and signed with Ed25519.</p></div>
+      <div class="rv"><h3>No accounts, no phone number</h3><p>Your identity is a key pair made on your device. You add people by scanning a code in person.</p></div>
+      <div class="rv"><h3>Locked to your devices</h3><p>Limit your identity to enrolled devices and known networks. A new device needs a one-time code from one you already trust.</p></div>
+      <div class="rv"><h3>Money stays with the bank</h3><p>Pay requests hand off to UPI, *99# or your bank's SMS service. Reo never holds money or sees a PIN.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="get">
+  <div class="wrap">
+    <div class="head rv"><p class="mono">Download</p><h2>Get Reo.</h2><p class="lead">Free. Pick your device.</p></div>
+    <div class="dl">
+      <div class="dcard rv"><h3>WINDOWS</h3><p>A 230 KB app that uses the WebView2 already in Windows 11. Run the installer, or unzip and open Reo.exe.</p><a class="btn" href="https://reo-relay.reo-relay.workers.dev/install/install-reo-windows.cmd">Installer (.cmd)</a><a class="btn ghost" href="https://reo-relay.reo-relay.workers.dev/install/Reo-windows.zip">Zip</a></div>
+      <div class="dcard rv"><h3>ANDROID</h3><p>A 21 KB APK with background delivery, notifications, camera and voice. Allow installs from your browser when asked.</p><a class="btn red" href="https://reo-relay.reo-relay.workers.dev/install/Reo.apk">Download APK</a></div>
+      <div class="dcard rv"><h3>LINUX</h3><p>Needs Python 3 with GTK and WebKitGTK. The installer checks and tells you what is missing.</p><div class="cmd"><code id="lin">curl -fsSL https://reo-relay.reo-relay.workers.dev/install/install-reo-linux.sh | sh</code><button type="button" data-copy="lin">COPY</button></div></div>
+      <div class="dcard rv"><h3>BROWSER</h3><p>No install at all. Works in any modern browser and can be added to your home screen.</p><a class="btn ghost" href="https://reo-relay.reo-relay.workers.dev/">Open Reo</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span class="dot" style="font-size:30px;color:var(--fg)">REO</span><span>Small, private, and direct.</span></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

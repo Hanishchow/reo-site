@@ -93,9 +93,9 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 .p-in::after { content: ""; position: absolute; right: 7px; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); }
 
 /* stats */
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
 .stat { border-top: 2px solid var(--fg); padding-top: 14px; }
-.stat b { display: block; font-family: var(--font-dot); font-weight: 900; font-size: clamp(40px, 5vw, 62px); line-height: 1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.stat b { display: block; font-family: var(--font-dot); font-weight: 900; font-size: clamp(54px, 8vw, 84px); line-height: 1; font-variant-numeric: tabular-nums; }
 .stat span { color: var(--muted); font-size: 15px; }
 
 /* feature cards */

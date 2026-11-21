@@ -12,11 +12,6 @@ if (!reduce) {
   }, { passive: true })
 }
 
-// marquee
-const words = ['TEXT', 'VOICE NOTES', 'FILES', 'CALLS', 'GROUPS', 'DIRECTORY', 'MAIL', 'SOS', 'LAN DIRECT', 'END TO END']
-const group = (hidden) => `<div class="marq-g"${hidden ? ' aria-hidden="true"' : ''}>${words.map((w) => `<span>${w}</span>`).join('')}</div>`
-$('#marq').innerHTML = group(false) + group(true)
-
 // scroll reveal, org chart, count-up
 const io = new IntersectionObserver((entries) => {
   for (const e of entries) {
